@@ -1,17 +1,14 @@
 var fs = require('fs');
 var file = process.argv[2];
 var lines;
-function FileReadingIsSlow (callback)
-{
-    fs.readFile(file, 'utf8', function doneReading(err, data)
-    {
+function FileReadingIsSlow (callback) {
+    fs.readFile(file, 'utf8', function doneReading(err, data) {
        	lines = data.split('\n').length -1;
        	callback();
     });
  }
 
-function newlines()
-{
+function newlines() {
 	console.log(lines);
 }
 

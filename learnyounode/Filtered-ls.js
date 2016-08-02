@@ -3,7 +3,7 @@ var ext = "."+ process.argv[3];
 
 fs.readdir(process.argv[2], function callback(err, list)
 	{
-		for (var j=1; j<list.length; j++) 
+		for (var j=0; j<list.length; j++) 
 		{
 	        if (list[j].match(ext)) 
 	        {

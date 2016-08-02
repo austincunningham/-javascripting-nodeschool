@@ -1,14 +1,11 @@
 var ls = require('./Make-it-Modular2.js');
 var path = process.argv[2];
 var ext = process.argv[3];
-ls(path, ext, function(err, data)
-{
-	if (err)
-	{
+ls(path, ext, function(err, data) {
+	if (err) {
 		console.log(err);
 	}
-	for(var i = 0 ; i < data.length; i++)
-	{
+	for(var i = 0 ; i < data.length; i++) {
 		console.log(data[i])
 	}
 });
